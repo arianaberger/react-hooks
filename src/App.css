@@ -1,15 +1,29 @@
+body {
+  background-color: gray;
+  color: #fff;
+}
+
 .app {
   position: relative;
 }
 
 .wrapper {
-  display: flex;
-  margin: 100px;
+  display: inline-block;
+  margin: 50px;
   justify-content: center;
-  font-family: fantasy;
+  font-family: monospace;
   font-size: 2em;
 }
 
-.counter {
-  display: flex;
+.cursive {
+  font-family: cursive;
+  width: 20px;
+  color: #000;
+}
+
+button {
+  font-size: 1.5em;
+  font-family: monospace;
+  color: cyan;
+  background-color: #000;
 }
