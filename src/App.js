@@ -6,8 +6,13 @@ const App = () => {
 
   return(
     <div className="app">
-      <div className="counter">
-        The count is currently: {count}
+      <div className="wrapper">
+        <div className="counter">
+          The count is currently: {count}
+        </div>
+        <div className="counter">
+          <button onClick={() => setCount(count + 1)}>Click me!</button>
+        </div>
       </div>
     </div>
   );

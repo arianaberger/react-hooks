@@ -2,10 +2,14 @@
   position: relative;
 }
 
-.counter {
+.wrapper {
   display: flex;
-  margin: 50px;
+  margin: 100px;
   justify-content: center;
   font-family: fantasy;
   font-size: 2em;
+}
+
+.counter {
+  display: flex;
 }
