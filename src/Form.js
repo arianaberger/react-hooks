@@ -24,7 +24,7 @@ const Form = () => {
         value={values.password}
         onChange={handleChange}
       />
-      <p className="secret">Check your console to see a secret message when you enter your password, all thanks to useEffect...</p>
+      <p className="secret">Check your console to see a secret message when you enter your password...</p>
 
     </div>
   );

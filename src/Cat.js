@@ -17,11 +17,15 @@ const Cat = () => {
           <img src="https://media.giphy.com/media/ZIcOEgfPoRoe4/giphy.gif" width="75%" height="75%" alt="kitteh"/>
         </a>
       </div>
-      <div className="fact">
+      <div className="fact-container">
         <h4>Can you teach an old cat a new fact?</h4>
-        {loading ? "kiTTeh iz thinking haRd..." : fact}
+        <div className="fact">
+          {loading ? "kiTTeh iz thinking haRd..." : fact}
+        </div>
+        <div>
+          <button onClick={() => setCount(c => c + 1)}>nEw FaCt</button>
+        </div>
       </div>
-      <button onClick={() => setCount(c => c + 1)}>nEw FaCt</button>
     </div>
   )
 }
