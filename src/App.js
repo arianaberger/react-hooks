@@ -33,6 +33,10 @@ const App = () => {
         <Form />
         <Cat />
 
+
+        <hr />
+        <p>~*~Fin~*~</p>
+
       </div>
     </div>
   );

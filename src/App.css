@@ -73,9 +73,18 @@ body {
   font-family: fantasy;
 }
 
+.fact {
+  color: cyan;
+  text-align: center;
+}
+
 button {
   font-size: 1.5em;
   font-family: monospace;
   color: cyan;
   background-color: #000;
+}
+
+p {
+  text-align: center;
 }
