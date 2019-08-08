@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import Form from './Form';
 
 const App = () => {
@@ -28,10 +28,11 @@ const App = () => {
         >
           Click me!
         </button>
+
         <Form />
         <div className="image">
           <a href="https://giphy.com/gifs/cat-party-hard-rainbow-shit-ZIcOEgfPoRoe4">
-            <img src="https://media.giphy.com/media/ZIcOEgfPoRoe4/giphy.gif" width="480" height="342" />
+            <img src="https://media.giphy.com/media/ZIcOEgfPoRoe4/giphy.gif" width="75%" height="75%" alt="kitteh"/>
           </a>
         </div>
 
