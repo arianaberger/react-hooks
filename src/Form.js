@@ -1,18 +1,19 @@
 import React, { useState } from "react";
+import { useForm } from "./useForm";
 
 const Form = () => {
-  const [values, handleChange] = useState({email: '', password: ''});
+  const [values, handleChange] = useForm({email: '', password: ''});
 
   return (
     <div className="form">
       <h3>This is a form with it's own custom hook!</h3>
-      <h5>Email:</h5>
+      Email:
       <input
         name='email'
         value={values.email}
         onChange={handleChange}
       />
-      <h5>Password:</h5>
+      Password:
       <input
         type='password'
         name='password'

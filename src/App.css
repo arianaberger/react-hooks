@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+  width: 75%;
   display: inline-block;
   margin-left: 50px;
   justify-content: center;
@@ -28,8 +29,39 @@ body {
 
 .form {
   margin-top: 50px;
+  padding-bottom: 10px;
   background: pink;
   color: #000;
+}
+
+.image {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 50px;
+  -moz-animation: example5 5s linear infinite alternate;
+   -webkit-animation: example5 5s linear infinite alternate;
+   animation: example5 5s linear infinite alternate;
+  }
+  /* Move it (define the animation) */
+  @-moz-keyframes example5 {
+   0%   { -moz-transform: translateX(70%); }
+   100% { -moz-transform: translateX(0%); }
+  }
+  @-webkit-keyframes example5 {
+   0%   { -webkit-transform: translateX(70%); }
+   100% { -webkit-transform: translateX(0%); }
+  }
+  @keyframes example5 {
+   0%   {
+   -moz-transform: translateX(70%); /* Firefox bug fix */
+   -webkit-transform: translateX(70%); /* Firefox bug fix */
+   transform: translateX(70%);
+   }
+   100% {
+   -moz-transform: translateX(0%); /* Firefox bug fix */
+   -webkit-transform: translateX(0%); /* Firefox bug fix */
+   transform: translateX(0%);
+   }
 }
 
 button {
