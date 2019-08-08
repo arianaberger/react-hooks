@@ -9,7 +9,7 @@ body {
 
 .wrapper {
   display: inline-block;
-  margin: 50px;
+  margin-left: 50px;
   justify-content: center;
   font-family: monospace;
   font-size: 2em;
@@ -17,8 +17,13 @@ body {
 
 .cursive {
   font-family: cursive;
-  width: 20px;
+  width: 50px;
   color: #000;
+  background-color: #fff;
+}
+
+.use-state {
+  background: #000;
 }
 
 button {
