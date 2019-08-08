@@ -1,6 +1,6 @@
 import './App.css';
-import React, { useState, useEffect } from "react";
-import { Form } from './Form';
+import React, { useState } from "react";
+import Form from './Form';
 
 const App = () => {
   const [count1, setCount1] = useState(0);
@@ -28,8 +28,6 @@ const App = () => {
         >
           Click me!
         </button>
-      </div>
-      <div className="use-form">
         <Form />
       </div>
     </div>

@@ -26,6 +26,12 @@ body {
   background: #000;
 }
 
+.form {
+  margin-top: 50px;
+  background: pink;
+  color: #000;
+}
+
 button {
   font-size: 1.5em;
   font-family: monospace;
