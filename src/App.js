@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
 import Form from './Form';
+import Cat from './Cat';
 
 const App = () => {
   const [count1, setCount1] = useState(0);
@@ -30,11 +31,7 @@ const App = () => {
         </button>
 
         <Form />
-        <div className="image">
-          <a href="https://giphy.com/gifs/cat-party-hard-rainbow-shit-ZIcOEgfPoRoe4">
-            <img src="https://media.giphy.com/media/ZIcOEgfPoRoe4/giphy.gif" width="75%" height="75%" alt="kitteh"/>
-          </a>
-        </div>
+        <Cat />
 
       </div>
     </div>
