@@ -29,6 +29,9 @@ const App = () => {
           Click me!
         </button>
       </div>
+      <div className="use-form">
+        <Form />
+      </div>
     </div>
   );
 };

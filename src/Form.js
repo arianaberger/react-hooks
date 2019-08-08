@@ -3,15 +3,6 @@ import React, { useState, useEffect } from "react";
 const Form = () => {
   const [values, handleChange] = useState({email: '', password: ''});
 
-  useEffect(() => {
-    console.log('render');
-
-    return () => {
-      console.log("unmount");
-    }
-  }, []);
-
-
   return (
     <div>
       <input
