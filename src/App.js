@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useState } from "react";
+import Welcome from './Welcome';
 import Form from './Form';
 import Cat from './Cat';
 
@@ -9,11 +10,11 @@ const App = () => {
 
   return(
     <div className="app">
-      <h3 className="cursive">Let's learn some React hooks!</h3>
+      <Welcome />
       <div className="wrapper">
         <div className="use-state">
-          <h2>The first count is currently: {count1}</h2>
-          <h2>The second count is currently: {count2}</h2>
+          <h2>If you've been GOOD this is how many presents you'll receive: {count1}</h2>
+          <h2>If you've been BAD this is how many presents you'll receive: {count2}</h2>
         </div>
         <button
           onClick={() =>
@@ -32,10 +33,6 @@ const App = () => {
 
         <Form />
         <Cat />
-
-
-        <hr />
-        <p>~*~Fin~*~</p>
 
       </div>
     </div>

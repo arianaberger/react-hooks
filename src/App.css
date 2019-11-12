@@ -1,6 +1,6 @@
 body {
-  background-color: gray;
-  color: #fff;
+  background-image: url(../public/background.jpg);
+  color: #DF0011;
 }
 
 .app {
@@ -16,22 +16,54 @@ body {
   font-size: 2em;
 }
 
-.cursive {
+.welcome {
   font-family: cursive;
-  width: 50px;
+  font-size: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   color: #000;
-  background-color: #fff;
+
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%);
+  transform:translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: example1 15s linear infinite;
+  -webkit-animation: example1 15s linear infinite;
+  animation: example1 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes example1 {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes example1 {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes example1 {
+ 0%   {
+ -moz-transform: translateX(100%); /* Firefox bug fix */
+ -webkit-transform: translateX(100%); /* Firefox bug fix */
+ transform: translateX(100%);
+ }
+ 100% {
+ -moz-transform: translateX(-100%); /* Firefox bug fix */
+ -webkit-transform: translateX(-100%); /* Firefox bug fix */
+ transform: translateX(-100%);
+ }
 }
 
 .use-state {
-  background: #000;
+  background: #18B100;
+  border: 5px groove #DF0011;
 }
 
 .form {
   margin-top: 50px;
   padding-bottom: 10px;
-  background: pink;
-  color: #000;
+  background: #126C00;
+  color: #FF0023;
 }
 
 .image {
@@ -69,12 +101,13 @@ body {
   font-size: 12px;
   font-style: italic;
   font-weight: lighter;
-  color: purple;
+  color: #fff;
   font-family: fantasy;
 }
 
 .fact-container {
-  color: cyan;
+  color: #DF0011;
+  background-color: #18B100;
   text-align: center;
 }
 
@@ -84,14 +117,15 @@ body {
   font-family: sans-serif;
   padding: 20px;
   margin-bottom: 15px;
-  background-color: purple;
+  background-color: #DF0011;
 }
 
 button {
+  border: 5px groove #DF0011;
   font-size: 1.5em;
   font-family: monospace;
-  color: cyan;
-  background-color: #000;
+  color: #DF0011;
+  background-color: #18B100;
 }
 
 p {
