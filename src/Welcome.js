@@ -11,8 +11,22 @@ const Welcome = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const odd = seconds % 2 === 1 ? "green" : "red";
+  const even = seconds % 2 === 0 ? "green" : "red";
+
   return(
-    <h3 className="welcome">WELCOME!!!</h3>
+    <h3 className="welcome">
+      <div className={`${odd}`}>W</div>
+      <div className={`${even}`}>E</div>
+      <div className={`${odd}`}>L</div>
+      <div className={`${even}`}>C</div>
+      <div className={`${odd}`}>O</div>
+      <div className={`${even}`}>M</div>
+      <div className={`${odd}`}>E</div>
+      <div className={`${even}`}>!</div>
+      <div className={`${odd}`}>!</div>
+      <div className={`${even}`}>!</div>
+    </h3>
   )
 }
 

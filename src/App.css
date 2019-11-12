@@ -16,6 +16,17 @@ body {
   font-size: 2em;
 }
 
+.red {
+  color: red;
+  display: inline-block;
+}
+
+.green {
+  color: green;
+  display: inline-block;
+
+}
+
 .welcome {
   font-family: cursive;
   font-size: 100px;
